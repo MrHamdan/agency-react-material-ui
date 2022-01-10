@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import meeting from '../Images/meeting.png';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 
 
@@ -29,9 +30,23 @@ const Choice = () => {
             </Box>
             <Box sx={{
                 textAlign: 'center',
-                marginTop: '40px'
+                marginTop: '40px',
+                position: 'relative'
             }}>
                 <img style={{ width: '100%' }} src={meeting} alt="" />
+                <PlayArrowIcon sx={{
+                    position: 'absolute',
+                    color: '#fff',
+                    fontSize: '40px',
+                    background: '#5454D4',
+                    borderRadius: '50%',
+                    padding: '20px',
+                    left: '47%',
+                    top: '40%',
+                    cursor: 'pointer'
+                }}>
+
+                </PlayArrowIcon>
             </Box>
         </Container>
     );
